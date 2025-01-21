@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'ok2'
-        powershell 'bat \'dotnet build WpfApp1.sln\''
+        powershell 'bat \'C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Professional\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe WpfApp1.sln /p:Configuration=Release\''
       }
     }
 
